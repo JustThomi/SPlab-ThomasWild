@@ -2,10 +2,11 @@
 
 #include <iostream>
 #include <string>
+
 #include "Element.hpp"
 
-class Paragraph: public Element {
-public:
+class Paragraph : public Element {
+   public:
     // Constructor
     Paragraph(const std::string& text);
 
@@ -13,8 +14,8 @@ public:
     ~Paragraph();
 
     // Print method to display the paragraph text
-    void print() const override;
+    void print();
 
-private:
+   private:
     std::string text;
 };

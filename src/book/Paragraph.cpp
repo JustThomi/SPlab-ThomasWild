@@ -7,6 +7,6 @@ Paragraph::Paragraph(const std::string& text) : text(text) {}
 Paragraph::~Paragraph() {}
 
 // Print method to display the paragraph text
-void Paragraph::print() const {
+void Paragraph::print() {
     std::cout << "Paragraph Text: " << text << std::endl;
 }

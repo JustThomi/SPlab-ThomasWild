@@ -2,10 +2,11 @@
 
 #include <iostream>
 #include <string>
+
 #include "Element.hpp"
 
-class Image: public Element {
-public:
+class Image : public Element {
+   public:
     // Constructor
     Image(const std::string& imageName);
 
@@ -13,8 +14,8 @@ public:
     ~Image();
 
     // Print method to display the image name
-    void print() const override;
+    void print();
 
-private:
+   private:
     std::string imageName;
 };
