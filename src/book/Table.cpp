@@ -7,6 +7,4 @@ Table::Table(const std::string& title) : title(title) {}
 Table::~Table() {}
 
 // Print method to display the table title
-void Table::print() const {
-    std::cout << "Table Title: " << title << std::endl;
-}
+void Table::print() { std::cout << "Table Title: " << title << std::endl; }

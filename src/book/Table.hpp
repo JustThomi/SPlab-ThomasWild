@@ -2,10 +2,11 @@
 
 #include <iostream>
 #include <string>
+
 #include "Element.hpp"
 
-class Table: public Element {
-public:
+class Table : public Element {
+   public:
     // Constructor
     Table(const std::string& title);
 
@@ -13,8 +14,8 @@ public:
     ~Table();
 
     // Print method to display the table title
-    void print() const override;
+    void print();
 
-private:
+   private:
     std::string title;
 };
