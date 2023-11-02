@@ -14,7 +14,6 @@ class Book : public Section {
 
     void setAuthor(Author* Autrhor);
 
-    // inherited
     virtual void print();
     virtual void add();
     virtual void remove();

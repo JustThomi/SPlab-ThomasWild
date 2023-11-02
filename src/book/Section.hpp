@@ -11,7 +11,6 @@ class Section : public Element {
 
     std::string getTitle();
 
-    // inherited
     virtual void print();
     virtual void add();
     virtual void remove();
