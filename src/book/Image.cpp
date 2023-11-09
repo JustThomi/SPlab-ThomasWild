@@ -13,4 +13,8 @@ void Image::getSize() {}
 void Image::display() {}
 void Image::add() {}
 void Image::remove() {}
-Element* Image::get(int nr) {}
+// plceholder for now
+Element* Image::get(int nr) {
+    Element* e;
+    return e;
+}
