@@ -8,3 +8,5 @@ Table::~Table() {}
 
 // Print method to display the table title
 void Table::print() { std::cout << "Table Title: " << title << std::endl; }
+
+void Table::accept(Visitor& v) {std::cout << "accept" << std::endl;}

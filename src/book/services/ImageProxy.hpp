@@ -3,9 +3,11 @@
 #include <iostream>
 #include <string>
 
-#include "Element.hpp"
-#include "Image.hpp"
-#include "Picture.hpp"
+#include "./models/Element.hpp"
+#include "./models/Image.hpp"
+#include "./models/Picture.hpp"
+#include "Visitor.hpp"
+#include "Visitee.hpp"
 
 class ImageProxy : public Element, public Picture {
    private:
@@ -27,4 +29,6 @@ class ImageProxy : public Element, public Picture {
             delete realImage;
         }
     }
+
+    void accept(Visitor& v) { std::cout << "accepted" << std::endl;}
 };

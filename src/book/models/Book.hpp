@@ -5,8 +5,10 @@
 
 #include "Author.hpp"
 #include "Section.hpp"
+#include "./services/Visitee.hpp"
+#include "./services/Visitor.hpp"
 
-class Book : public Section {
+class Book : public Section, public Visitee {
    public:
     Book(const std::string& title);
 
@@ -17,6 +19,7 @@ class Book : public Section {
     virtual void print();
     virtual void add();
     virtual void remove();
+    virtual void accept(Visitor& v);
 
    protected:
     Author* author;
