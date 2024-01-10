@@ -15,3 +15,5 @@ void Section::add() {}
 void Section::remove() {}
 
 Element* Section::get(int pos) { return elements[pos]; }
+
+void accept(Visitor& v) {std::cout << "accepted" << std::endl;}

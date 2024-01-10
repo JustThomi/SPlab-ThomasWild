@@ -5,8 +5,10 @@
 
 #include "Element.hpp"
 #include "Picture.hpp"
+#include "./services/Visitor.hpp"
+#include "./services/Visitee.hpp"
 
-class Image : public Element, public Picture {
+class Image : public Element, public Picture, public Visitee {
    public:
     // Constructor
     Image(const std::string& imgPath);
@@ -23,6 +25,8 @@ class Image : public Element, public Picture {
     void add();
     void remove();
     Element* get(int nr);
+
+    virtual void accept(Visitor& v);
 
    private:
     std::string imgPath;
