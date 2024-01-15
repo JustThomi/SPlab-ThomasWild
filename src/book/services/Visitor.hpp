@@ -1,11 +1,11 @@
 #pragma once
 
-#include "./models/Book.hpp"
-#include "./models/Paragraph.hpp"
-#include "./models/Section.hpp"
-#include "./models/Image.hpp"
-#include "./models/Table.hpp"
-#include "ImageProxy.hpp"
+#include "../models/Section.hpp"
+#include "../models/Book.hpp"
+#include "../models/Paragraph.hpp"
+#include "../models/Table.hpp"
+#include "../models/Image.hpp"
+#include "./ImageProxy.hpp"
 
 class Visitor{
 public:

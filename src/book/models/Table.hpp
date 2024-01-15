@@ -4,8 +4,8 @@
 #include <string>
 
 #include "Element.hpp"
-#include "./services/Visitor.hpp"
-#include "./services/Visitee.hpp"
+
+class Visitor;
 
 class Table : public Element {
    public:

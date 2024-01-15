@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-Section::Section(const std::string& title) : title(title) {}
+Section::Section(const std::string title) : title(title) {}
 
 Section::~Section() {}
 

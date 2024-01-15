@@ -4,11 +4,10 @@
 #include <string>
 
 #include "Element.hpp"
-#include "./services/Visitor.hpp"
-#include "./services/Visitee.hpp"
 
+class Visitor;
 
-class Paragraph : public Element, public Visitee {
+class Paragraph : public Element {
    public:
     // Constructor
     Paragraph(const std::string& text);
@@ -19,7 +18,7 @@ class Paragraph : public Element, public Visitee {
     // Print method to display the paragraph text
     void print();
 
-    virtual void accept(Visitor& v);
+    void accept(Visitor& v);
 
    private:
     std::string text;

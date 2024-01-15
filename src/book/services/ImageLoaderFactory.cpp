@@ -1,6 +1,6 @@
-#include "ImageLoaderFactory.hpp"
-#include "BmpImageLoader.hpp"
-#include "JpgImageLoader.hpp"
+#include "./ImageLoaderFactory.hpp"
+#include "./BmpImageLoader.hpp"
+#include "./JpgImageLoader.hpp"
 
 
 ImageLoaderFactory::ImageLoaderFactory(){}

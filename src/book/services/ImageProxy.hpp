@@ -3,11 +3,12 @@
 #include <iostream>
 #include <string>
 
-#include "./models/Element.hpp"
-#include "./models/Image.hpp"
-#include "./models/Picture.hpp"
-#include "Visitor.hpp"
+#include "../models/Element.hpp"
+#include "../models/Image.hpp"
+#include "../models/Picture.hpp"
 #include "Visitee.hpp"
+
+class Visitor;
 
 class ImageProxy : public Element, public Picture {
    private:
@@ -30,5 +31,5 @@ class ImageProxy : public Element, public Picture {
         }
     }
 
-    void accept(Visitor& v) { std::cout << "accepted" << std::endl;}
+    void accept(Visitor* v) { std::cout << "accepted" << std::endl;}
 };
