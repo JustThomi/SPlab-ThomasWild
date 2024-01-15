@@ -19,4 +19,4 @@ Element* Image::get(int nr) {
     return e;
 }
 
-void Image::accept(Visitor& v) {std::cout << "accepted" << std::endl;}
+void Image::accept(Visitor* v) {std::cout << "accepted" << std::endl;}

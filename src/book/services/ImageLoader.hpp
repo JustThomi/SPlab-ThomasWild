@@ -4,8 +4,6 @@
 #include <string>
 
 class ImageLoader {
-    public:
-     virtual ~ImageLoader();
-
+public:
      virtual void load(std::string imageContent) = 0;
 };

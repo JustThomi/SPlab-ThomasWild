@@ -6,7 +6,7 @@
 class Author {
 public:
     // Constructor
-    Author(const std::string& name);
+    Author(const std::string name);
 
     // Destructor
     ~Author();

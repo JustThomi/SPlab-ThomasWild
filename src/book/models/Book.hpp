@@ -5,12 +5,12 @@
 
 #include "Author.hpp"
 #include "Section.hpp"
-#include "./services/Visitee.hpp"
-#include "./services/Visitor.hpp"
 
-class Book : public Section, public Visitee {
+class Visitor;
+
+class Book : public Section {
    public:
-    Book(const std::string& title);
+    Book(const std::string title);
 
     ~Book();
 

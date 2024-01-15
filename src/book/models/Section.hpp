@@ -3,12 +3,12 @@
 #include <string>
 
 #include "Element.hpp"
-#include "./services/Visitor.hpp"
-#include "./services/Visitee.hpp"
+
+class Visitor;
 
 class Section : public Element {
    public:
-    Section(const std::string& title);
+    Section(const std::string title);
     ~Section();
 
     std::string getTitle();
@@ -17,7 +17,7 @@ class Section : public Element {
     virtual void add();
     virtual void remove();
     virtual Element* get(int nr);
-    virtual void accept(Visitor& v);
+    void accept(Visitor& v);
 
    private:
     std::string title;

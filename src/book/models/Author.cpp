@@ -1,7 +1,7 @@
 #include "Author.hpp"
 
 // Constructor
-Author::Author(const std::string& name) : name(name) {}
+Author::Author(const std::string name) : name(name) {}
 
 // Destructor
 Author::~Author() {}

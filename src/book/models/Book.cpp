@@ -1,7 +1,7 @@
 #include "Book.hpp"
 
 // Constructor
-Book::Book(const std::string& title) : Section(title) {}
+Book::Book(const std::string title) : Section(title) {}
 
 // Destructor
 Book::~Book() {}
