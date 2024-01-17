@@ -13,6 +13,7 @@ public:
 
     // Print method to display the name
     void print() const;
+    std::string getName();
 
 private:
     std::string name;

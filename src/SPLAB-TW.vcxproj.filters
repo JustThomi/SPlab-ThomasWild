@@ -54,6 +54,9 @@
     <ClCompile Include="book\services\BookController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="book\services\RequestLoggingFIlter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="book\models\Author.hpp">
@@ -108,6 +111,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="book\services\BookController.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book\services\RequestLoggingFilter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

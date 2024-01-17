@@ -10,3 +10,7 @@ Author::~Author() {}
 void Author::print() const {
     std::cout << "Name: " << name << std::endl;
 }
+
+std::string Author::getName() {
+    return name;
+}
