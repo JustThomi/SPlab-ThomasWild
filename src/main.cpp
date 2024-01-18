@@ -8,7 +8,7 @@ int main() {
     Book* book = new Book("Show your work!");
     book->setAuthor(author);
 
-    // book->print();
+    book->print();
 
     getchar();
     return 0;

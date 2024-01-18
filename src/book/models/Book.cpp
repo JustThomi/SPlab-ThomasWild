@@ -7,7 +7,7 @@ Book::Book(const std::string title) : Section(title) {}
 Book::~Book() {}
 
 // Print method to display the title
-void Book::print() { std::cout << getTitle() << std::endl; }
+void Book::print() { std::cout << "Title: " << getTitle() << "\nAuthor: " << author->getName() << std::endl; }
 
 void Book::add() {}
 
